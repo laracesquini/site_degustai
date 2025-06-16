@@ -1,3 +1,5 @@
+import dotenv from "dotenv";
+dotenv.config();
 import { MongoClient } from "mongodb";
 //MongoClient é uma classe
 
