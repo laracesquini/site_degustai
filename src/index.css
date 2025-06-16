@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 158 31% 15%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 158 31% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 158 31% 15%;
+
+    --primary: 352 74% 57%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 120 34% 30%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 120 14% 85%;
+    --muted-foreground: 158 31% 25%;
+
+    --accent: 96 38% 46%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 120 14% 75%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 352 74% 57%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 158 31% 15%;
+    --foreground: 0 0% 100%;
+
+    --card: 158 31% 20%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 158 31% 15%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 352 74% 57%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 120 34% 30%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 120 14% 25%;
+    --muted-foreground: 120 14% 85%;
+
+    --accent: 96 38% 46%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 120 14% 35%;
+    --input: 120 14% 35%;
+    --ring: 352 74% 57%;
+    
+    --sidebar-background: 158 31% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 352 74% 57%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 120 34% 25%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 158 31% 20%;
+    --sidebar-ring: 352 74% 57%;
+  }
+}
+
+body {
+  @apply font-poppins;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-playfair;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.custom-date-input::-webkit-calendar-picker-indicator {
+  filter: invert(1); /* ícone branco */
+  cursor: pointer;
+}
