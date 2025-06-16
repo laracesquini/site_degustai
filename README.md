@@ -1,73 +1,65 @@
-# Welcome to your Lovable project
+# Bem vindo(a) ao projeto Degustaí!
 
-## Project info
+**Desgustaí** é uma plataforma web desenvolvida em grupo como projeto final da matéria de Tópicos em Novas tecnologias do curso de Ciência da Computação da Unesp de São José de Rio Preto. O objetivo foi criar uma solução completa para ajudar pessoas a melhorarem suas habilidades culinárias, oferecendo receitas adaptáveis às suas preferências, com navegação intuitiva e filtros inteligentes.
 
-**URL**: https://lovable.dev/projects/f1938599-f1ad-4046-b6f3-462a652b465b
 
-## How can I edit this code?
+## Funcionalidades Principais
 
-There are several ways of editing your application.
+- **Busca por nome da receita ou ingrediente**  
+- **Filtros personalizados**: tempo de preparo, categoria e ingredientes  
+- **Favoritar receitas**: salve suas receitas favoritas com login  
+- **Cadastro e login de usuários**  
+- **Design responsivo**: compatível com desktop, tablet e celular  
+- **Página de contato** com formulário de mensagens  
+- **Simulação de servidor com webhook** para testes
 
-**Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f1938599-f1ad-4046-b6f3-462a652b465b) and start prompting.
+## Estrutura das Páginas
+- **Home**: receitas em destaque, busca rápida e frases inspiradoras  
+- **Sobre**: missão, visão e equipe por trás do projeto  
+- **Cadastre-se / Login**: criação e acesso de conta com email e senha  
+- **Meus dados**: acesso aos dados pessoais e receitas favoritadas 
+- **Contate-nos**: formulário para dúvidas, sugestões e feedback
+- **Categorias**: acesso rápido às receitas de acordo com suas categorias
+- **Receitas**: receitas disponíveis e filtros por ingredientes, tempo e categoria
+- **Tela interna de receitas**: detalhes e informações de uma receita específica
 
-Changes made via Lovable will be committed automatically to this repo.
 
-**Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Tecnologias Utilizadas
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Front-end
+- [React](https://react.dev/) com [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/) para estilização
+- [Vite](https://vitejs.dev/) para build e desenvolvimento
 
-Follow these steps:
+### Back-end
+- [Node.js](https://nodejs.org/)
+- [Express](https://expressjs.com/)
+- [Axios](https://axios-http.com/) para requisições HTTP
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Design
+- [Figma](https://figma.com) para prototipação da interface
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+##  Como Rodar o Projeto
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Pré-requisitos
+- Node.js instalado
+
+### Backend
+
+```bash
+cd projetos/back-end
+npm install
+node index.js
+```
+
+### Frontend
+
+```bash
+cd projetos
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/f1938599-f1ad-4046-b6f3-462a652b465b) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
