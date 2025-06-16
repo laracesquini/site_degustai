@@ -1,7 +1,7 @@
 import { MongoClient } from "mongodb";
 //MongoClient é uma classe
 
-const URI = "mongodb+srv://seuNomeUsuario:suaSenha@cluster0.zwelo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+const URI = process.env.MONGO_URI
 
 const client = new MongoClient(URI)
 
